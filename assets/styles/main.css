@@ -1,0 +1,157 @@
+html {
+  /* min-height: 100vh; */
+}
+
+body {
+  background-color: hsl(240, 73%, 65%);
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    hsl(240, 73%, 65%),
+    hsl(273, 75%, 66%)
+  );
+  background-repeat: no-repeat;
+}
+
+.main-box {
+  margin: 40% auto;
+  position: relative;
+  border-radius: 2rem;
+  width: 90%;
+  height: 35rem;
+  background-color: whitesmoke;
+}
+
+.bg-pattern {
+  position: absolute;
+  left: 15%;
+}
+
+.woman-online {
+  position: absolute;
+  left: 4vh;
+  /* right: 50%; */
+  top: -22%;
+}
+
+.shows {
+  display: block;
+}
+
+.title {
+  padding-top: 40%;
+  text-align: center;
+}
+
+.questions-container {
+  position: absolute;
+  width: 85%;
+  height: 20rem;
+  top: 12rem;
+  right: 0%;
+  left: 7.5%;
+}
+
+.question-container {
+  width: 100%;
+  margin-left: auto;
+  margin-top: 2.5rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.question {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.answer {
+  display: none;
+  transition: 0.5s ease-out;
+}
+
+.answer-size {
+  max-height: 0px;
+}
+
+h4,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.arrow-down::after {
+  content: "";
+  background-image: url(/assets/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: right;
+  background-position: 100% 100%;
+  width: 8%;
+  height: 10px;
+}
+
+.arrow-up::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  width: 8%;
+  height: 10px;
+  transform: rotate(180deg);
+}
+
+.bold-question {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 45rem) {
+  .main-box {
+    width: 60%;
+    margin: 10% auto;
+    height: 29rem;
+  }
+
+  .bg-pattern {
+    width: 60%;
+    left: -20%;
+    top: 60%;
+  }
+
+  .woman-online {
+    width: 50%;
+    left: -15%;
+    top: 30%;
+  }
+
+  .title {
+    padding-top: 5%;
+  }
+
+  .questions-container {
+    width: 40%;
+    height: 23rem;
+    top: 20%;
+    left: 46%;
+    overflow: hidden;
+
+    /* background-color: red; */
+  }
+
+  .question-container {
+    /* background-color: royalblue; */
+  }
+
+  .question:hover {
+    color: hsl(14, 88%, 65%);
+  }
+
+  .arrow-down::after {
+    /* background-color: red; */
+    float: right;
+    /* width: 30%; */
+  }
+}
