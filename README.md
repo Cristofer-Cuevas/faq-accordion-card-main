@@ -8,4 +8,4 @@ Thanks for checking out this front-end coding challenge.
 
 ## `Live`
 
-Link: [](https://faq-accordion-card-three-sigma.vercel.app)
+Link: [FAQ accordion card page](https://faq-accordion-card-three-sigma.vercel.app)
